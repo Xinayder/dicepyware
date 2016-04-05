@@ -6,6 +6,7 @@ Python version required: 3.4.4 or newer.
 
 ### Usage
 `python dicepyware.py -l <length>`
+
 Passing a length lesser than 6 will raise an error.
 
 ### FAQ

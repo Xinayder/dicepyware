@@ -1,8 +1,8 @@
 # dicepyware
 
-dicepyware is an utility that generates cryptographically secure and random passphrases for your daily use. It utilizes the [Diceware method][diceware] for picking words from a list.
+dicepyware is a Python utility that generates cryptographically secure and random passphrases for your daily use. It utilizes the [Diceware method][diceware] for picking words from a list.
 
-Python version: 3.4.x or newer.
+Python version required: 3.4.x or newer.
 
 ### Usage
 `python dicepyware.py -l <length>`

@@ -88,3 +88,4 @@ ENV/
 .ropeproject
 
 wordlist.asc
+.vs

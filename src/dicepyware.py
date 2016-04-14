@@ -93,10 +93,10 @@ def main():
 	arg_parser = argparse.ArgumentParser(prog='dicepyware', description='Generate cryptographically secure random passphrases for daily use. It uses the diceware method for generating the passphrases. Check out http://world.std.com/~reinhold/diceware.html for more info.')
 	arg_parser.add_argument('-l', '--length', required=False, metavar='<passphrase length>', dest='passphrase_length', type=int, default=6, help='determine the passphrase length. Values lesser than 6 are considered invalid for generating a secure random password.')
 	arg_parser.add_argument('-s', '--separator', required=False, metavar='<word seperator>', dest='separator', type=str, default=' ', help='declare the character separator between each word.  Default is ` `.')
-	arg_parser.add_argument('-c', '--special', required=False, metavar='<include random character>', dest='inc_special_character', type=bool, default=False, help='include a random character.')
+	arg_parser.add_argument('-c', '--special', required=False, dest='inc_special_character', default=False, action='store_true', help='include a random character.')
 	arg_parser.add_argument('--version', action='version', version='%(prog)s ' + __version__)
 	args = arg_parser.parse_args()
-	
+
 	generated_passphrase = generate_passphrase(
 		length=args.passphrase_length,
 		separator=args.separator,

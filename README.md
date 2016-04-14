@@ -5,9 +5,11 @@ dicepyware is a Python utility that generates cryptographically secure and rando
 Python version required: 3.4.4 or newer.
 
 ### Usage
-`python dicepyware.py -l <length>`
+`python dicepyware.py [-l <length>] [-s <separator>] [-c]`
 
-Passing a length lesser than 6 will raise an error.
+- `l`: Number of words to include.  (default: `6`; minimum: `6`)
+- `s`: The separator character to use between each word.  (default: ` `)
+- `c`: Include a special character somewhere in the generated passphrase.  (default: `False`)
 
 ### FAQ
 

@@ -37,7 +37,7 @@ def download_and_parse_word_list():
 		with open(fp, 'wb') as fo:
 			data = urlopen(DICEWARE_WORDLIST).read()
 			fo.write(data)
-			print("Saved file to '%s'." % list_file)
+			print("Saved file to '%s'." % fp)
 
 	# Open the file and parse it.
 	raw_word_list = ''

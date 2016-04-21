@@ -18,7 +18,9 @@ Python version required: 3.4.4 or newer.
 According to their [FAQ][diceware-faq], a 4-word passphrase only provides *51.6 bits* of entropy, almost the same number of bits as an 8 random ASCII character password.
 Five word passphrases also are not allowed because they are easily breakable by a powerful botnet.
 
-If you're looking for true secure passphrases, consider using a length of 8 words or more.
+If you're looking for true secure passphrases, consider using a length of 8 words or more. Using the `-c` option to include a special character at random adds about 10 bits of entropy.
+
+All of this assumes, of course, that your passphrase is kept secret.
 
 
 [diceware]: http://world.std.com/~reinhold/diceware.html
